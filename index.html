@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjishnu - Developer Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init("epMuPyYUtJPbiBbC_");
+        
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#8A2BE2',
+                        secondary: '#A755F7',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(to right, #8A2BE2, #A755F7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #8A2BE2, #A755F7);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl font-bold text-primary">ANJISHNU</div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="hover:text-primary transition">Home</a>
+                    <a href="#about" class="hover:text-primary transition">About</a>
+                    <a href="#projects" class="hover:text-primary transition">Projects</a>
+                    <a href="#skills" class="hover:text-primary transition">Skills</a>
+                    <a href="#contact" class="hover:text-primary transition">Contact</a>
+
+                    <a href="https://github.com/Anjishnu04" target="_blank"
+                        class="gradient-bg text-white px-6 py-2 rounded-full shadow-md hover:shadow-lg">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="pt-32 pb-20 flex flex-col items-center text-center px-4">
+        <div class="relative mb-8">
+            <div class="w-40 h-40 rounded-full gradient-bg p-1 shadow-xl">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=AJ" class="w-full h-full rounded-full bg-white">
+            </div>
+            <div class="absolute bottom-2 right-2 text-4xl">👋</div>
+        </div>
+        
+        <h2 class="text-lg font-medium mb-2">Hi, I'm </h2>
+            <span class="font-bold text-primary">Anjishnu Sarkar</span>
+        
+        <h1 class="text-4xl md:text-5xl font-bold max-w-2xl leading-tight mb-8">
+            A passionate Frontend Developer & UI/UX Designer crafting beautiful digital experiences
+        </h1>
+        
+        <div class="flex gap-4">
+            <a href="#projects" class="gradient-bg text-white px-8 py-3 rounded-full shadow-lg hover:-translate-y-1">
+                View My Work
+            </a>
+            <a href="#contact" class="bg-white text-primary border-2 border-primary px-8 py-3 rounded-full hover:bg-purple-50 hover:-translate-y-1">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">About Me</h2>
+                <div class="w-16 h-1 gradient-bg mx-auto mt-2"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+
+                <div class="bg-white p-4 rounded-full shadow-xl rotate-0 hover:rotate-0 transition">
+                    <img src="https://i.ibb.co/MkvwVdyk/Anjishnu04.jpg" class="rounded-full w-full h-full object-cover aspect-square">
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-bold text-black-1000 mb-2 uppercase tracking-wide">Hello!</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        I am a Frontend Developer with a strong passion for creating visually appealing and high-performance web applications. From designing smooth user interfaces to bringing ideas to life through clean and efficient code.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="badge">React</span>
+                        <span class="badge">Next.js</span>
+                        <span class="badge">TypeScript</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">UI/UX</span>
+                        <span class="badge">Python</span>
+                        <span class="badge">HTML</span>
+                        <span class="badge">CSS</span>
+                    </div>
+
+                    <style>
+                        .badge {
+                            padding: 6px 16px;
+                            background: #eee;
+                            border-radius: 20px;
+                            font-size: 14px;
+                            color: #555;
+                            font-weight: 500;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-2">Skills & Expertise</h2>
+            <div class="w-16 h-1 gradient-bg mx-auto mb-10"></div>
+
+            <div class="space-y-8 text-left">
+
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span>HTML</span><span>95%</span>
+                    </div>
+                    <div class="bar"><div class="fill bg-orange-500" style="width:95%"></div></div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span>CSS</span><span>85%</span>
+                    </div>
+                    <div class="bar"><div class="fill bg-blue-500" style="width:90%"></div></div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span>JavaScript</span><span>85%</span>
+                    </div>
+                    <div class="bar"><div class="fill bg-pink-500" style="width:92%"></div></div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span>React & Next.js</span><span>80%</span>
+                    </div>
+                    <div class="bar"><div class="fill bg-blue-600" style="width:95%"></div></div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span>Tailwind CSS</span><span>92%</span>
+                    </div>
+                    <div class="bar"><div class="fill bg-pink-500" style="width:92%"></div></div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span>Python</span><span>92%</span>
+                    </div>
+                    <div class="bar"><div class="fill bg-green-500" style="width:92%"></div></div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span>UI/UX Design</span><span>90%</span>
+                    </div>
+                    <div class="bar"><div class="fill bg-red-500" style="width:92%"></div></div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between mb-2">
+                        <span>Node.js & Express</span><span>79%</span>
+                    </div>
+                    <div class="bar"><div class="fill bg-yellow-500" style="width:92%"></div></div>
+                </div>
+
+                <style>
+                    .bar { width:100%; height:10px; background:#eee; border-radius:10px; }
+                    .fill { height:10px; border-radius:10px; }
+                </style>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <h2 class="text-3xl text-center font-bold mb-2">Featured Projects</h2>
+            <div class="w-16 h-1 gradient-bg mx-auto mb-10"></div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- LocalKart -->
+                <div class="project-card">
+                    <div class="project-title bg-slate-900">
+                        <i data-lucide="shopping-cart" class="icon"></i>
+                        <h3>LocalKart</h3>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg">E-Commerce Platform</h3>
+                        <p class="text-gray-600 text-sm mb-4">Localkart is a simple and user-friendly platform designed to connect local sellers with nearby customers. It helps users discover and purchase products from shops in their locality without any hassle. With an intuitive interface and smooth navigation, Localkart makes local shopping faster, easier, and more convenient supporting small businesses while delivering a great shopping experience right at your fingertips.</p>
+                        <a href="https://github.com/Anjishnu04/LocalKart" target="_blank" class="project-link">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- To-Do List -->
+                <div class="project-card">
+                    <div class="project-title bg-slate-100 text-gray-800">
+                        <i data-lucide="list-todo" class="icon text-orange-400"></i>
+                        <h3>To-Do List</h3>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg">To-Do List</h3>
+                        <p class="text-gray-600 text-sm mb-4">This To-Do List application helps users efficiently manage their daily tasks. It allows users to add new tasks, mark completed ones, and delete tasks that are no longer needed. The interface is simple, user-friendly, and designed to keep all important tasks organized in one place. With this app, staying productive and keeping track of your work becomes easier and more enjoyable.</p>
+                        <a href="https://github.com/Anjishnu04/To-Do-List" target="_blank" class="project-link">View Details →</a>
+                    </div>
+                </div>
+
+                <!-- Calculator -->
+                <div class="project-card">
+                    <div class="project-title bg-slate-50">
+                        <i data-lucide="calculator" class="icon text-gray-300"></i>
+                        <h3 class="text-gray-300">Calculator</h3>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg">Calculator App</h3>
+                        <p class="text-gray-600 text-sm mb-4">he Calculator application is a lightweight and easy-to-use tool designed to perform basic mathematical operations such as addition, subtraction, multiplication, and division. With a clean interface and responsive buttons, it provides quick and accurate results, making everyday calculations simple and efficient. This project demonstrates practical implementation of logical operations and UI design in a user-friendly way.</p>
+                        <a href="https://github.com/Anjishnu04/Calculator" target="_blank" class="project-link">View Details →</a>
+                    </div>
+                </div>
+
+                <style>
+                    .project-card {
+                        background:white; border-radius:20px; overflow:hidden;
+                        box-shadow:0 4px 20px rgba(0,0,0,0.1);
+                        transition:.3s;
+                    }
+                    .project-card:hover { transform:translateY(-5px); box-shadow:0 8px 25px rgba(0,0,0,0.15); }
+                    .project-title {
+                        height:180px; display:flex; flex-direction:column;
+                        align-items:center; justify-content:center; padding:20px;
+                    }
+                    .icon { width:55px; height:55px; margin-bottom:10px; }
+                    .project-link { color:#8A2BE2; font-weight:600; }
+                </style>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <h2 class="text-3xl font-bold text-center mb-2">Get In Touch</h2>
+            <div class="w-16 h-1 gradient-bg mx-auto mb-8"></div>
+
+            <div class="grid md:grid-cols-[1fr_1.5fr] gap-8">
+
+                <!-- LEFT -->
+                <div class="space-y-6">
+                    <div class="contact-card">
+                        <div class="icon-box bg-blue-500"><i data-lucide="mail"></i></div>
+                        <div><p class="text-sm text-gray-500">Email</p><p class="font-medium">anjishnusarkar30@icloud.com</p></div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="icon-box bg-pink-500"><i data-lucide="phone"></i></div>
+                        <div><p class="text-sm text-gray-500">Phone</p><p class="font-medium">+91 8583008513</p></div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="icon-box bg-green-500"><i data-lucide="map-pin"></i></div>
+                        <div><p class="text-sm text-gray-500">Location</p><p class="font-medium">India</p></div>
+                    </div>
+                </div>
+
+                <!-- RIGHT CONTACT FORM -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl">
+                    <form id="contactForm" class="space-y-6">
+
+                        <div>
+                            <label class="block mb-2 text-sm">Name</label>
+                            <input name="user_name" required type="text" class="input">
+                        </div>
+
+                        <div>
+                            <label class="block mb-2 text-sm">Email</label>
+                            <input name="user_email" required type="email" class="input">
+                        </div>
+
+                        <div>
+                            <label class="block mb-2 text-sm">Message</label>
+                            <textarea name="message" rows="4" required class="input"></textarea>
+                        </div>
+
+                        <button class="w-full gradient-bg text-white py-3 rounded-lg font-medium shadow-lg hover:shadow-xl">
+                            Send Message
+                        </button>
+                    </form>
+
+                    <style>
+                        .input {
+                            width:100%; border:1px solid #ddd; padding:12px 15px;
+                            border-radius:10px; outline:none; transition:.2s;
+                        }
+                        .input:focus { border-color:#8A2BE2; box-shadow:0 0 0 1px #8A2BE2; }
+                        .contact-card {
+                            background:white; padding:18px; border-radius:15px;
+                            box-shadow:0 4px 12px rgba(0,0,0,0.08);
+                            display:flex; align-items:center; gap:14px;
+                        }
+                        .icon-box {
+                            width:45px; height:45px; border-radius:10px;
+                            display:flex; align-items:center; justify-content:center; color:white;
+                        }
+                    </style>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+
+            <div class="flex justify-center gap-4 mb-8">
+                <a href="https://github.com/Anjishnu04" target="_blank" class="social">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://www.instagram.com/syntax_4044/" target="_blank" class="social">
+                    <i data-lucide="instagram"></i>
+                </a>
+                <a href="https://www.instagram.com/04.anjishnu.08/" target="_blank" class="social">
+                    <i data-lucide="instagram"></i>
+                </a>
+            </div>
+
+            <style>
+                .social {
+                    width:42px; height:42px; border-radius:50%;
+                    background:#1e293b; display:flex; align-items:center; justify-content:center;
+                }
+                .social:hover { background:#8A2BE2; }
+            </style>
+
+            <p class="text-gray-400 text-sm">Made with ❤️ by Anjishnu Sarkar</p>
+            <p class="text-gray-500 text-xs mt-2">© 2025 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ICONS + FORM SCRIPT -->
+    <script>
+        lucide.createIcons();
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            emailjs.send("service_gmbimbo", "template_fhvrcoh", {
+                user_name: this.user_name.value,
+                user_email: this.user_email.value,
+                message: this.message.value
+            })
+            .then(() => {
+                alert("Message sent successfully!");
+                this.reset();
+            })
+            .catch(() => {
+                alert("Error sending message. Try again.");
+            });
+        });
+    </script>
+
+</body>
+</html>
